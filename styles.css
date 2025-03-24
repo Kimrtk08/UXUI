@@ -1,0 +1,110 @@
+.jongtk{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.875rem; /* เท่ากับ text-3xl */
+    background-color: #ffffff; /* เท่ากับ bg-red-500 */
+    padding: 0.5rem 1rem; /* เท่ากับ px-4 py-2 */
+}
+.d1{
+    background: white;
+    padding: 10px;
+    margin: 50px;
+}
+.co{
+        border: 0;
+        height: 2px;
+        background-color:orange; /* สีที่คุณต้องการ */
+}
+.ta{
+    width: 100%;
+    background: rgb(218, 218, 218);
+    padding: 20px;
+}
+.logobus {
+    display: flex;
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    gap: 10px; /* เพิ่มระยะห่างระหว่างรูปและข้อความ */
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.imgc {
+    width: auto;
+    height: 40px;
+    margin: 0; /* ลบ margin-top ที่อาจทำให้ภาพไม่อยู่ตรงกลาง */
+}
+
+.font-bold {
+    margin: 0; /* ป้องกัน margin ที่อาจทำให้ข้อความไม่ตรง */
+}
+.center-box {
+    width: 50%;
+    max-width: 400px; /* จำกัดความกว้างสูงสุด */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* จัดให้อยู่ตรงกลาง */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ce {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* จัดให้ label และ input ห่างกัน */
+    width: 100%;
+    margin-bottom: 10px; /* เพิ่มระยะห่างแต่ละแถว */
+}
+
+.ce p {
+    width: 120px; /* กำหนดความกว้างของข้อความให้เท่ากัน */
+    text-align: left;
+}
+
+.ce input {
+    flex-grow: 1; /* ทำให้ input ขยายตัวเท่ากัน */
+    max-width: 200px;
+}
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+}
+h2 {
+    margin-bottom: 5px;
+}
+p {
+    color: gray;
+    margin-bottom: 20px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.contact-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+
+      

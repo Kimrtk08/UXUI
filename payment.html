@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Ticket in Thaitour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-yellow-600 text-white py-3 px-5 flex justify-between items-center">
+        <div class="text-xl font-bold flex items-center">
+            <span class="ml-2">All ticket in thaitour 🚌</span>
+        </div>
+        <div>
+            <a href="index.html" class="px-3">หน้าหลัก</a>
+            <a href="tablecar.html" class="px-3">ตารางเดินรถ</a>
+            <a href="status.html" class="px-3">ตรวจสอบสถานะ</a>
+            <a href="contact.html" class="px-3">ติดต่อเรา</a>
+        </div>
+    </nav>
+
+    <div class="tab-menu text-center my-4">
+        <a href="#" class="px-4 text-blue-500 font-bold">⬤ ค้นหา</a>
+        <a>————</a>
+        <a href="#" class="px-4 text-blue-500 font-bold">⬤ เที่ยวบริการ</a>
+        <a>————</a>
+        <a href="#" class="px-4 text-blue-500 font-bold">⬤ ผู้โดยสาร</a>
+        <a>————</a>
+        <a href="#" class="px-4 text-blue-500 font-bold">⬤ ที่นั่ง</a>
+        <a>————</a>
+        <a href="#" class="px-4 text-blue-500 font-bold">⬤ ชำระเงิน</a>
+    </div>
+
+    <main class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold mb-4">ชำระเงิน</h2>
+        <hr>
+        <div class="flex justify-between items-start bg-white p-4 rounded-lg shadow-md">
+            
+            <div class="flex items-start">
+                <img src="images/Sriracha.png" alt="ศรีราชาทัวร์" class="w-12 h-12 mr-4">
+                <div>
+                    <h4 class="font-bold">ศรีราชาทัวร์</h4>
+                    <p class="text-sm text-gray-500">Economy class (ปกติ)</p>
+                    <p class="text-red-500">06:20 จุดจอด ต.แสนสุข ศรีราชาทัวร์ (สถานีหนองมน)</p>
+                    <p class="text-red-500">08:30 สถานีขนส่งผู้โดยสารกรุงเทพ ถนนบรมราชชนนี (สายใต้ใหม่)</p>
+                    <p class="text-sm text-gray-500 mt-2">****วันเดินทางอาจมีการปรับเปลี่ยนประเภทโดยสารโดยไม่ต้องแจ้งล่วงหน้า (โปรดมารอขึ้นรถก่อนเวลา 30 นาที)</p>
+                    <div class="flex items-center mt-2">
+                        <input type="checkbox" id="one-way" class="mr-2">
+                        <label for="one-way">เที่ยวเดียว</label>
+                        <input type="checkbox" id="round-trip" class="ml-4 mr-2">
+                        <label for="round-trip">คืนตั๋ว</label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="text-xl font-bold">฿140.00</p>
+                <p class="text-sm text-gray-500">ที่นั่งว่าง: 38</p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <section class="max-w-4xl mx-auto mt-6 bg-white p-6 rounded shadow-md">
+            <h2 class="text-xl font-semibold mb-4">เลือกที่นั่ง</h2>
+            <div class="grid grid-cols-4 gap-4">
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">1</button>
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">2</button>
+                <button class="w-10 h-10 bg-gray-300 border border-gray-300 rounded text-center text-sm flex items-center justify-center">3</button>
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">4</button>
+                <button class="w-10 h-10 bg-gray-300 border border-gray-300 rounded text-center text-sm flex items-center justify-center">5</button>
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">6</button>
+                <button class="w-10 h-10 bg-gray-300 border border-gray-300 rounded text-center text-sm flex items-center justify-center">7</button>
+                <button class="w-10 h-10 bg-orange-500 border border-gray-300 rounded text-white text-sm flex items-center justify-center" disabled>8</button>
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">9</button>
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">10</button>
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">11</button>
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">12</button>
+                <button class="w-10 h-10 bg-gray-300 border border-gray-300 rounded text-center text-sm flex items-center justify-center">13</button>
+                <button class="w-10 h-10 bg-white border border-gray-300 rounded text-center text-sm flex items-center justify-center">14</button>
+                <button class="w-10 h-10 bg-gray-300 border border-gray-300 rounded text-center text-sm flex items-center justify-center">15</button>
+                <button class="w-10 h-10 bg-gray-300 border border-gray-300 rounded text-sm flex items-center justify-center">16</button>
+                <hr class="co"><hr class="co"><hr class="co"><hr class="co">
+            </div>
+        </section>
+        <section class="max-w-4xl mx-auto mt-6 bg-white p-6 rounded shadow-md">
+            <h2 class="text-xl font-semibold mb-4">ชำระเงิน</h2>
+            <p class="text-lg font-bold">ยอดรวม: ฿140.00</p>
+            <div class="flex justify-center mt-4">
+                <img src="https://via.placeholder.com/200" alt="QR Code" class="border p-2">
+            </div>
+            <p class="text-center mt-2">สแกน QR Code เพื่อชำระเงิน</p>
+            <a href="confirm.html"><button class="mt-4 bg-blue-600 text-white p-2 rounded w-full">ยืนยันการชำระเงิน</button></a>
+        </section>
+        
+    </main>
+
+    <footer class="bg-yellow-600 py-3 px-5 fixed bottom-0 left-0 w-full h-16"></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

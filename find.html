@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Ticket in Thaitour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-yellow-600 text-white py-3 px-5 flex justify-between items-center">
+        <div class="text-xl font-bold flex items-center">
+            <span class="ml-2">All ticket in thaitour 🚌</span>
+        </div>
+        <div>
+            <a href="index.html" class="px-3">หน้าหลัก</a>
+            <a href="tablecar.html" class="px-3">ตารางเดินรถ</a>
+            <a href="status.html" class="px-3">ตรวจสอบสถานะ</a>
+            <a href="contact.html" class="px-3">ติดต่อเรา</a>
+        </div>
+    </nav>
+
+    <div class="tab-menu text-center my-4">
+        <a href="#" class="px-4 text-blue-500 font-bold">⬤ ค้นหา</a>
+        <a>————</a>
+        <a href="#" class="px-4 text-blue-500 font-bold">⬤ เที่ยวบริการ</a>
+        <a>————</a>
+        <a href="#" class="px-4">⬤ ผู้โดยสาร</a>
+        <a>————</a>
+        <a href="#" class="px-4">⬤ ที่นั่ง</a>
+        <a>————</a>
+        <a href="#" class="px-4">⬤ ชำระเงิน</a>
+    </div>
+
+    <main class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold mb-4">เที่ยวไป</h2>
+        <div class="bg-gray-100 p-4 rounded-lg mb-4">
+            <p>ชลบุรี : จุดจอด ต.แสนสุข ศรีราชาทัวร์ (สถานีหนองมน) → กรุงเทพมหานาคร : สถานีขนส่งผู้โดยสารกรุงเทพ ถนนบรมราชชนนี (สายใต้ใหม่)</p>
+            <h3 class="text-lg font-bold my-3">21 มกราคม 2025</h3>
+            <div class="flex justify-between items-start bg-white p-4 rounded-lg shadow-md">
+                <div class="flex items-start">
+                    <img src="images/Sriracha.png" alt="ศรีราชาทัวร์" class="w-12 h-12 mr-4">
+                    <div>
+                        <h4 class="font-bold">ศรีราชาทัวร์</h4>
+                        <p class="text-sm text-gray-500">Economy class (ปกติ)</p>
+                        <p class="text-red-500">06:20 จุดจอด ต.แสนสุข ศรีราชาทัวร์ (สถานีหนองมน)</p>
+                        <p class="text-red-500">08:30 สถานีขนส่งผู้โดยสารกรุงเทพ ถนนบรมราชชนนี (สายใต้ใหม่)</p>
+                        <p class="text-sm text-gray-500 mt-2">****วันเดินทางอาจมีการปรับเปลี่ยนประเภทโดยสารโดยไม่ต้องแจ้งล่วงหน้า (โปรดมารอขึ้นรถก่อนเวลา 30 นาที)</p>
+                        <div class="flex items-center mt-2">
+                            <input type="checkbox" id="one-way" class="mr-2">
+                            <label for="one-way">เที่ยวเดียว</label>
+                            <input type="checkbox" id="round-trip" class="ml-4 mr-2">
+                            <label for="round-trip">คืนตั๋ว</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-xl font-bold">฿140.00</p>
+                    <p class="text-sm text-gray-500">ที่นั่งว่าง: 38</p>
+                    <a href="passenger.html"><button class="bg-orange-500 text-white px-4 py-2 mt-2 rounded-lg">เลือก</button></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="nearby-stops bg-gray-100 p-4 rounded-lg">
+            <h3 class="text-lg font-bold mb-3">จุดขึ้น-ลงใกล้เคียง</h3>
+            <div class="space-y-2">
+                <div class="col-1 col-md-auto pr-2 col-md-auto">
+                    <div id="line"></div>
+                    <div id="start"></div>
+                    <div id="end"></div>
+                </div>
+                <div>
+                    <label for="stop1">⬤ จุดจอด อ.เมืองชลบุรี ศรีราชาทัวร์ (ตึกคอม)</label>
+                </div>
+                <div>
+                    <label for="stop2">-> สถานีขนส่งผู้โดยสารกรุงเทพ ถนนบรมราชชนนี (สายใต้ใหม่)</label>
+                </div>
+            </div>
+            <button class="bg-red-500 text-white px-4 py-2 mt-4 rounded-lg">ค้นหา</button>
+        </section>
+        <br>
+        <section class="nearby-stops bg-gray-100 p-4 rounded-lg">
+            <h3 class="text-lg font-bold mb-3">จุดขึ้น-ลงใกล้เคียง</h3>
+            <div class="space-y-2">
+                <div>
+                    <label for="stop1">⬤ จุดจอด ต.บางพระ ศรีราชาทัวร์</label>
+                </div>
+                <div>
+                    <label for="stop2">-> สถานีขนส่งผู้โดยสารกรุงเทพ ถนนบรมราชชนนี (สายใต้ใหม่)</label>
+                </div>
+            </div>
+            <button class="bg-red-500 text-white px-4 py-2 mt-4 rounded-lg">ค้นหา</button>
+        </section>
+    </main>
+
+    <footer class="bg-yellow-600 py-3 px-5 fixed bottom-0 left-0 w-full h-16"></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

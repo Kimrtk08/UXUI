@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จองตั๋วรถทัวร์</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-yellow-600 text-white py-3 px-5 flex justify-between items-center">
+        <div class="text-xl font-bold flex items-center">
+            <span class="ml-2">All ticket in thaitour &#x1F68D;</span>
+        </div>
+        <div>
+            <a href="index.html" class="px-3">หน้าหลัก</a>
+            <a href="tablecar.html" class="px-3">ตารางเดินรถ</a>
+            <a href="status.html" class="px-3">ตรวจสอบสถานะ</a>
+            <a href="contact.html" class="px-3">ติดต่อเรา</a>
+        </div>
+    </nav>
+    
+    <!-- Header Image -->
+    <div class="relative">
+        <img src="images/Bus.png" alt="Bus" class="w-full h-64 object-cover pt-1">
+        <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#FA7047] text-3xl bg-white px-4 py-2 rounded">จองตั๋วรถทัวร์</h2>
+        
+    </div>
+    
+    <!-- Search Section -->
+    <div class="bg-white p-6 max-w-4xl mx-auto mt-5 shadow-lg rounded">
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <label class="block font-medium">จาก</label>
+                <select id="from" class="form-select w-full p-2 border rounded">
+                    <option value="">กรุณาเลือก</option>
+                    <option value="กรุงเทพ (สายใต้)">กรุงเทพ (สายใต้)</option>
+                    <option value="ชลบุรี">ชลบุรี</option>
+                    <option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option>
+                </select>
+            </div>
+            <div> 
+                <label class="block font-medium">ถึง</label>
+                <select id="to" class="form-select w-full p-2 border rounded">
+                    <option value="">กรุณาเลือก</option>
+                    <option value="กรุงเทพ (สายใต้)">กรุงเทพ (สายใต้)</option>
+                    <option value="ชลบุรี">ชลบุรี</option>
+                    <option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option>
+                </select>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div>
+                <label class="block font-medium">เที่ยวไป</label>
+                <input type="number" id="passengers" class="w-full p-2 border rounded" min="1" value="1">
+            </div>
+            <div>
+                <label class="block font-medium">ผู้โดยสาร</label>
+                <select class="form-select w-full p-2 border rounded">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+        </div>
+        <button onclick="searchTrips()" class="bg-blue-500 text-white px-4 py-2 rounded mt-4 w-full">ค้นหา</button>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="flex justify-center space-x-6 mt-6">
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/line-me.png" alt="LINE" class="w-16 h-16 bg-white p-2 rounded"></a>
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" class="w-16 h-16 bg-white p-2 rounded"></a>
+    </div>
+
+    <script>
+        function searchTrips() {
+          window.location.href = 'find.html';
+        }
+      </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="bg-yellow-600 py-3 px-5 fixed bottom-0 left-0 w-full h-16"></footer>
+</body>
+</html>
